@@ -36,3 +36,20 @@ It contains:
 This image shows the structure of the Content Container Template in /_admin
 
 ![Structure in Matrix](https://github.com/dletorey/External-Video-Container-Template/blob/master/Images/external-video-Container-Template.png) "Structure of the container template in Squiz Matrix"
+## Importing the Container template
+* Download the /Import-File/external-video-container-template.tgz file
+
+In the admin interface of your Squiz Matrix system:
+* Click Tools icon in the Squiz Matrix toolbar
+* Click the "Import Assets from XML Tool" link
+* Click "Choose File" and select the file downloaded
+* Choose the location to add your Container Template, this needs to be a location that has a URL so that the files have URLs
+* Click Save
+Once Complete there are 2 asset ids that need to be updated in the Simple Edit Layout
+* In the Asset Map, right click on the "Extrenal Video SEL" and select "Edit Contents"
+* Acquire the Locks
+* on line 1 of "Layouts and Fields div" update the asset id to be that of the template.css file
+* on line 20 of "Layouts and Fields div" update the asset id to be that of the getMedia.js file (inside the Scripts folder)
+* In the Asset Map, right click on the "Extrenal Video" Content Container template and select "Details"
+* Acquire the Locks
+* In the "Allowed Root Nodes" field select the locations that this Content Container Template can be used

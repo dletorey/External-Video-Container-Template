@@ -47,16 +47,11 @@ It contains:
 This image shows the structure of the Content Container Template in /_admin
 
 ![Structure in Matrix](https://github.com/dletorey/External-Video-Container-Template/blob/master/Images/external-video-Container-Template.png) "Structure of the container template in Squiz Matrix"
-<<<<<<< HEAD
-## Importing the Container Template
-* Download the /Import-File/external-video-container-template.tgz file
-=======
 ## Versions
 * v1.0 - this expects the user to tab out of the Video URL field to load the video
 * v2.0 - this adds a button to load the video making the UX better
 ## Importing the Container template
 * Download the /Import-File/external-video-container-template-v1-1.tgz
->>>>>>> a4982a417b5f1c6c918bdc7443a6af9c40410935
 
 In the admin interface of your Squiz Matrix system:
 * Click Tools icon in the Squiz Matrix toolbar

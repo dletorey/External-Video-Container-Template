@@ -2,6 +2,8 @@
 This is a content container template for Squiz Matrix
 ## What is it?
 It is a Squiz Matrix Content Container Template, that allows a user to easily embed a Youtube or Vimeo video in the content of a page.
+
+![External Vieo Template demo](https://github.com/dletorey/External-Video-Container-Template/blob/master/Images/external-video-demo.gif)
 ## Metadata Schema
 Metadata Schema - called Media Schema
 Metadata Section - called Resources

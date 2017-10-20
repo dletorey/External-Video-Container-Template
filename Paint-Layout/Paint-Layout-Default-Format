@@ -1,0 +1,39 @@
+<div id="player-%asset_assetid%"></div>
+%begin_asset_metadata_mediaType^eq:youtube%<!--@@ if the video is youtube @@-->
+<script>
+    // 2. This code loads the IFrame Player API code asynchronously.
+      // var tag = document.createElement('script');
+
+      // tag.src = "https://www.youtube.com/iframe_api";
+      // var firstScriptTag = document.getElementsByTagName('script')[0];
+      // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('player-%asset_assetid%', {
+          height: '390',
+          width: '640',
+          videoId: "%asset_metadata_mediaId%"
+        });
+      }
+</script>
+%else_begin_asset_metadata_mediaType^eq:vimeo%
+<!--@@ %globals_asset_contents_raw:1794% @@-->
+<script>
+    var options = {
+        id: %asset_metadata_mediaId%,
+        width: 640,
+        loop: false
+    };
+
+    var player = new Vimeo.Player('player-%asset_assetid%', options);
+
+    player.setVolume(0);
+
+    player.on('play', function() {
+        console.log('played the video!');
+    });
+</script>
+%end_asset_metadata_mediaType%

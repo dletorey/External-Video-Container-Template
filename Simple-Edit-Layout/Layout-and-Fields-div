@@ -1,0 +1,20 @@
+<link href="./?a=1419" rel="stylesheet" />
+<div class="template-wrapper" id="template-%asset_assetid%">
+    <div class="template-settings clearfix">
+      <div class="template-setting">
+        <label>%globals_asset_attribute_friendly_name:1808%:</label> <!--@@ URL field name @@-->
+        <div class="template-value mediaURL"> <!--@@ container for the URL field @@-->
+          <input type="text" name="container_%asset_assetid%_metadata_field_text_1808_value" value="%asset_metadata_mediaURL%" size="30" class="sq-form-field" id="container_%asset_assetid%_metadata_field_text_1808_value" %begin_asset_metadata_mediaType^eq:youtube%onchange="refreshYoutube()"%else_asset_metadata_mediaType%onchange="getMedia()"%end_asset_metadata_mediaType%> <!--@@ URL input field that checks to see if there is a value stored in mediaType @@-->
+        </div>
+      </div>
+      <div class="mediaType">%metadata-F_1810^replace:type="text":type="hidden"%</div> <!--@@ mediaType metadata field changed to type="hidden" @@-->
+      <div class="mediaId">%metadata-F_1811^replace:type="text":type="hidden"%</div> <!--@@ mediaId metadata field changed to type="hidden" @@-->
+    </div><!--.template-settings-->
+    <div id="videoContainer" class="template-content">
+        <div id="player-%asset_assetid%"></div> <!--@@ div that gets replaced by the video @@-->
+    </div><!--.template-content-->
+</div><!--.template-wrapper-->
+<script>
+    var containerId = %asset_assetid%; // current template id to make sure that correct video div is targeted
+</script>
+<script src="./?a=1838"></script> <!--@@ Loads in the getMedia.js file @@-->

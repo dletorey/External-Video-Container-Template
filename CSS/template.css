@@ -1,0 +1,42 @@
+.template-wrapper{
+  background: #f2f7fd;
+}
+.template-settings{
+  padding: 7px 15px 7px;
+  font-size: 12px;
+  border-bottom: 1px dotted #ddd;
+}
+.template-setting{
+  padding: 0;
+  margin: 0 25px 0 0;
+  float: left;
+  line-height: 29px;
+}
+.template-setting label{
+  display: inline-block;
+  float: left;
+  font-weight: bold;
+  margin: 0 7px 0 0;
+  width: auto;
+}
+.template-value{
+  display: inline-block;
+  float: left;
+  font-weight: bold;
+}
+.related-picker .ees_assetPicker{
+  padding-bottom: 0;
+}
+.related-picker .ees_assetPicker .assetDescription{
+  width: 200px;
+}
+.related-picker .customAssetIdInput input{
+  width: 183px !important;
+}
+.related-picker .ees_assetPicker .descriptionText{
+    width: auto;
+}
+
+.template-content{
+  padding: 10px;
+}

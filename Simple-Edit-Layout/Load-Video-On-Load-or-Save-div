@@ -1,0 +1,36 @@
+%begin_asset_metadata_mediaType%
+<script>
+if(window.location.href.indexOf("/_admin") > -1) {
+    var loadType = document.getElementsByClassName("mediaType")[0].getElementsByTagName('input')[0].value;
+    var loadId   = document.getElementsByClassName("mediaId")[0].getElementsByTagName('input')[0].value;
+    if (loadType == 'vimeo') {
+        vimeo(loadId);
+    } else {
+        youtube(loadId);
+    }
+}
+else{
+    if (!window.videoEventsLoaded) {
+        window.videoEventsLoaded = true;
+        EasyEditEventManager.bind('EasyEditAfterLoad',function(){
+            var loadType = document.getElementsByClassName("mediaType")[0].getElementsByTagName('input')[0].value;
+            var loadId   = document.getElementsByClassName("mediaId")[0].getElementsByTagName('input')[0].value;
+            if (loadType == 'vimeo') {
+                vimeo(loadId);
+            } else {
+                youtube(loadId);
+            }
+        });
+        EasyEditEventManager.bind('EasyEditSaveComplete',function(){
+            var loadType = document.getElementsByClassName("mediaType")[0].getElementsByTagName('input')[0].value;
+            var loadId   = document.getElementsByClassName("mediaId")[0].getElementsByTagName('input')[0].value;
+            if (loadType == 'vimeo') {
+                vimeo(loadId);
+            } else {
+                youtube(loadId);
+            }
+        });
+    }
+}
+</script>
+%end_asset_metadata_mediaType%

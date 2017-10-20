@@ -1,0 +1,14 @@
+<!--@@ https://github.com/vimeo/player.js#create-with-a-video-id-or-url vimeo embed code @@-->
+<script>
+    function vimeo(mediaId) {
+        var options = {
+            id: mediaId,
+            width: 640,
+            loop: false
+        };
+        var player = new Vimeo.Player('player-' + containerId, options);
+        player.setVolume(0);
+        player.on('play', function() {
+        });
+    }
+</script>

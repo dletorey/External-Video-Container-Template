@@ -50,8 +50,7 @@ In the admin interface of your Squiz Matrix system:
 Once Complete there are 2 asset ids that need to be updated in the Simple Edit Layout
 * In the Asset Map, right click on the "Extrenal Video SEL" and select "Edit Contents"
 * Acquire the Locks
-* on line 1 of "Layouts and Fields div" update the asset id to be that of the template.css file
-* on line 20 of "Layouts and Fields div" update the asset id to be that of the getMedia.js file (inside the Scripts folder)
+* on line 7 of "Layouts and Fields div" update the input field to use the asset ID of the mediaURL metadata field, this is currently 1808
 * In the Asset Map, right click on the "Extrenal Video" Content Container template and select "Details"
 * Acquire the Locks
 * In the "Allowed Root Nodes" field select the locations that this Content Container Template can be used

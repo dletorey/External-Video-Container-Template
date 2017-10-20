@@ -1,5 +1,14 @@
 # External-Video-Container-Template
 This is a content container template for Squiz Matrix
+* [What is it?](#what-is-it)
+* [Metadata Schema](#metadata-schema)
+* [Scripts Folder](#scripts-folder)
+* [CSS Folder](#css-folder)
+* [Simple Edit Layout](#simple-edit-layout)
+* [Paint Layout](#paint-layout)
+* [Structure Image](#image)
+* [Versions](#versions)
+* [Importing the Container Template](#importing-the-container-template)
 ## What is it?
 It is a Squiz Matrix Content Container Template, that allows a user to easily embed a Youtube or Vimeo video in the content of a page.
 
@@ -38,7 +47,7 @@ It contains:
 This image shows the structure of the Content Container Template in /_admin
 
 ![Structure in Matrix](https://github.com/dletorey/External-Video-Container-Template/blob/master/Images/external-video-Container-Template.png) "Structure of the container template in Squiz Matrix"
-## Importing the Container template
+## Importing the Container Template
 * Download the /Import-File/external-video-container-template.tgz file
 
 In the admin interface of your Squiz Matrix system:

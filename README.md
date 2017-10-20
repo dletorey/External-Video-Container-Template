@@ -32,3 +32,7 @@ This controls the way the frontend of the div works (displays the video).
 It contains:
 * Page Contents - /Paint-Layout/Paint-Layout-Page-Contents
 * Default Format - /Paint-Layout/Paint-Layout-Default-Format
+## Image
+This image shows the structure of the Content Container Template in /_admin
+
+![Structure in Matrix](https://github.com/dletorey/External-Video-Container-Template/blob/master/Images/external-video-Container-Template.png) "Structure of the container template in Squiz Matrix"

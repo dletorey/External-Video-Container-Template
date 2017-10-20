@@ -4,7 +4,8 @@
       <div class="template-setting">
         <label>%globals_asset_attribute_friendly_name:1808%:</label> <!--@@ URL field name @@-->
         <div class="template-value mediaURL"> <!--@@ container for the URL field @@-->
-          <input type="text" name="container_%asset_assetid%_metadata_field_text_1808_value" value="%asset_metadata_mediaURL%" size="30" class="sq-form-field" id="container_%asset_assetid%_metadata_field_text_1808_value" %begin_asset_metadata_mediaType^eq:youtube%onchange="refreshYoutube()"%else_asset_metadata_mediaType%onchange="getMedia()"%end_asset_metadata_mediaType%> <!--@@ URL input field that checks to see if there is a value stored in mediaType @@-->
+        <input type="text" name="container_%asset_assetid%_metadata_field_text_1808_value" value="%asset_metadata_mediaURL%" size="30" class="sq-form-field" id="container_%asset_assetid%_metadata_field_text_1808_value">
+        <input type="button" value="%begin_asset_metadata_mediaType%Reload Video%else_asset_metadata_mediaType%Load Video%end_asset_metadata_mediaType%" %begin_asset_metadata_mediaType^eq:youtube%onclick="refreshYoutube()"%else_asset_metadata_mediaType%onclick="getMedia()"%end_asset_metadata_mediaType%> <!--@@ URL input field that checks to see if there is a value stored in mediaType @@-->
         </div>
       </div>
       <div class="mediaType">%metadata-F_1810^replace:type="text":type="hidden"%</div> <!--@@ mediaType metadata field changed to type="hidden" @@-->
